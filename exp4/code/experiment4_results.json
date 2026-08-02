@@ -1,0 +1,107 @@
+{
+    "tuning_results": [
+        {
+            "Model": "Logistic Regression",
+            "Search Method": "Grid Search",
+            "Best Parameters": "{'C': 100, 'penalty': 'l1', 'solver': 'liblinear'}",
+            "Best CV Accuracy": 0.9260869565217392
+        },
+        {
+            "Model": "Logistic Regression",
+            "Search Method": "Randomized Search",
+            "Best Parameters": "{'solver': 'liblinear', 'penalty': 'l1', 'C': 100}",
+            "Best CV Accuracy": 0.9260869565217392
+        },
+        {
+            "Model": "Support Vector Machine",
+            "Search Method": "Grid Search",
+            "Best Parameters": "{'C': 10, 'gamma': 'scale', 'kernel': 'rbf'}",
+            "Best CV Accuracy": 0.9355978260869564
+        },
+        {
+            "Model": "Support Vector Machine",
+            "Search Method": "Randomized Search",
+            "Best Parameters": "{'kernel': 'linear', 'C': 1}",
+            "Best CV Accuracy": 0.9274456521739131
+        }
+    ],
+    "lr_performance": {
+        "Accuracy": 0.9261672095548317,
+        "Precision": 0.9202279202279202,
+        "Recall": 0.8898071625344353,
+        "F1 Score": 0.9047619047619048,
+        "ROC AUC": 0.967860422405877,
+        "Training Time (s)": 6.629880666732788
+    },
+    "svm_kernel_wise": [
+        {
+            "Kernel": "Linear",
+            "Accuracy": 0.9294245385450597,
+            "Precision": 0.9209039548022598,
+            "Recall": 0.8980716253443526,
+            "F1 Score": 0.9093444909344491,
+            "ROC AUC": 0.9694945545385427,
+            "Training Time (s)": 0.8263170719146729
+        },
+        {
+            "Kernel": "Poly",
+            "Accuracy": 0.7795874049945711,
+            "Precision": 0.9597701149425287,
+            "Recall": 0.46005509641873277,
+            "F1 Score": 0.6219739292364991,
+            "ROC AUC": 0.9554711336236263,
+            "Training Time (s)": 0.8498291969299316
+        },
+        {
+            "Kernel": "Rbf",
+            "Accuracy": 0.9272529858849077,
+            "Precision": 0.9277456647398844,
+            "Recall": 0.8842975206611571,
+            "F1 Score": 0.9055007052186178,
+            "ROC AUC": 0.9666854270959843,
+            "Training Time (s)": 0.5435500144958496
+        },
+        {
+            "Kernel": "Sigmoid",
+            "Accuracy": 0.8849077090119435,
+            "Precision": 0.8599439775910365,
+            "Recall": 0.8457300275482094,
+            "F1 Score": 0.8527777777777777,
+            "ROC AUC": 0.9386459906987766,
+            "Training Time (s)": 0.4243900775909424
+        }
+    ],
+    "svm_best_performance": {
+        "Accuracy": 0.9207383279044516,
+        "Precision": 0.9142857142857143,
+        "Recall": 0.8815426997245179,
+        "F1 Score": 0.8976157082748948,
+        "ROC AUC": 0.9701807912951609,
+        "Training Time (s)": 11.22981309890747
+    },
+    "kfold_results": {
+        "folds": [
+            "Fold 1",
+            "Fold 2",
+            "Fold 3",
+            "Fold 4",
+            "Fold 5"
+        ],
+        "lr_scores": [
+            0.9415760869565217,
+            0.9252717391304348,
+            0.9347826086956522,
+            0.9116847826086957,
+            0.9171195652173914
+        ],
+        "svm_scores": [
+            0.9442934782608695,
+            0.9415760869565217,
+            0.9347826086956522,
+            0.9307065217391305,
+            0.9266304347826086
+        ],
+        "lr_avg": 0.9260869565217392,
+        "svm_avg": 0.9355978260869564
+    }
+}
