@@ -1,0 +1,950 @@
+{
+    "dataset_summary": {
+        "total_samples": 569,
+        "num_features": 30,
+        "benign_samples": 357,
+        "malignant_samples": 212,
+        "train_samples": 455,
+        "test_samples": 114
+    },
+    "overfitting_analysis": {
+        "depths": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8,
+            9,
+            10,
+            11,
+            12,
+            13,
+            14,
+            15,
+            16,
+            17,
+            18,
+            19,
+            20
+        ],
+        "train_accuracies": [
+            0.9296703296703297,
+            0.9538461538461539,
+            0.967032967032967,
+            0.9824175824175824,
+            0.9868131868131869,
+            0.9934065934065934,
+            0.9956043956043956,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0,
+            1.0
+        ],
+        "cv_accuracies": [
+            0.9010989010989011,
+            0.9208791208791208,
+            0.9208791208791208,
+            0.9208791208791208,
+            0.9076923076923077,
+            0.9208791208791208,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923,
+            0.923076923076923
+        ],
+        "optimal_depth": 7
+    },
+    "decision_tree_tuning": {
+        "best_parameters": {
+            "criterion": "entropy",
+            "max_depth": 4,
+            "min_samples_leaf": 2,
+            "min_samples_split": 2
+        },
+        "best_cv_accuracy": 0.9406593406593406,
+        "tuning_time_seconds": 3.450866937637329,
+        "table1_hyperparameters": [
+            {
+                "Criterion": "Gini",
+                "Max Depth": "2",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 8,
+                "Avg CV Accuracy (%)": 92.75,
+                "Avg CV F1 Score": 0.9009,
+                "Std CV Accuracy (%)": 2.37
+            },
+            {
+                "Criterion": "Gini",
+                "Max Depth": "3",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 4,
+                "Avg CV Accuracy (%)": 92.75,
+                "Avg CV F1 Score": 0.899,
+                "Std CV Accuracy (%)": 2.26
+            },
+            {
+                "Criterion": "Gini",
+                "Max Depth": "4",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 92.53,
+                "Avg CV F1 Score": 0.8949,
+                "Std CV Accuracy (%)": 3.43
+            },
+            {
+                "Criterion": "Gini",
+                "Max Depth": "5",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 8,
+                "Avg CV Accuracy (%)": 92.75,
+                "Avg CV F1 Score": 0.8991,
+                "Std CV Accuracy (%)": 2.56
+            },
+            {
+                "Criterion": "Gini",
+                "Max Depth": "6",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.19,
+                "Avg CV F1 Score": 0.9067,
+                "Std CV Accuracy (%)": 3.06
+            },
+            {
+                "Criterion": "Gini",
+                "Max Depth": "8",
+                "Min Samples Split": 5,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 92.97,
+                "Avg CV F1 Score": 0.9039,
+                "Std CV Accuracy (%)": 2.75
+            },
+            {
+                "Criterion": "Gini",
+                "Max Depth": "10",
+                "Min Samples Split": 5,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 92.97,
+                "Avg CV F1 Score": 0.9039,
+                "Std CV Accuracy (%)": 2.75
+            },
+            {
+                "Criterion": "Gini",
+                "Max Depth": "None (Unpruned)",
+                "Min Samples Split": 5,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 92.97,
+                "Avg CV F1 Score": 0.9039,
+                "Std CV Accuracy (%)": 2.75
+            },
+            {
+                "Criterion": "Entropy",
+                "Max Depth": "2",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 8,
+                "Avg CV Accuracy (%)": 92.09,
+                "Avg CV F1 Score": 0.8929,
+                "Std CV Accuracy (%)": 1.89
+            },
+            {
+                "Criterion": "Entropy",
+                "Max Depth": "3",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 1,
+                "Avg CV Accuracy (%)": 92.53,
+                "Avg CV F1 Score": 0.8941,
+                "Std CV Accuracy (%)": 2.13
+            },
+            {
+                "Criterion": "Entropy",
+                "Max Depth": "4",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 94.07,
+                "Avg CV F1 Score": 0.9163,
+                "Std CV Accuracy (%)": 2.15
+            },
+            {
+                "Criterion": "Entropy",
+                "Max Depth": "5",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.63,
+                "Avg CV F1 Score": 0.9121,
+                "Std CV Accuracy (%)": 2.45
+            },
+            {
+                "Criterion": "Entropy",
+                "Max Depth": "6",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.41,
+                "Avg CV F1 Score": 0.9094,
+                "Std CV Accuracy (%)": 2.51
+            },
+            {
+                "Criterion": "Entropy",
+                "Max Depth": "8",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.41,
+                "Avg CV F1 Score": 0.9094,
+                "Std CV Accuracy (%)": 2.51
+            },
+            {
+                "Criterion": "Entropy",
+                "Max Depth": "10",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.41,
+                "Avg CV F1 Score": 0.9094,
+                "Std CV Accuracy (%)": 2.51
+            },
+            {
+                "Criterion": "Entropy",
+                "Max Depth": "None (Unpruned)",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.41,
+                "Avg CV F1 Score": 0.9094,
+                "Std CV Accuracy (%)": 2.51
+            },
+            {
+                "Criterion": "Log_loss",
+                "Max Depth": "2",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 8,
+                "Avg CV Accuracy (%)": 92.09,
+                "Avg CV F1 Score": 0.8929,
+                "Std CV Accuracy (%)": 1.89
+            },
+            {
+                "Criterion": "Log_loss",
+                "Max Depth": "3",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 1,
+                "Avg CV Accuracy (%)": 92.53,
+                "Avg CV F1 Score": 0.8941,
+                "Std CV Accuracy (%)": 2.13
+            },
+            {
+                "Criterion": "Log_loss",
+                "Max Depth": "4",
+                "Min Samples Split": 2,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 94.07,
+                "Avg CV F1 Score": 0.9163,
+                "Std CV Accuracy (%)": 2.15
+            },
+            {
+                "Criterion": "Log_loss",
+                "Max Depth": "5",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.63,
+                "Avg CV F1 Score": 0.9121,
+                "Std CV Accuracy (%)": 2.45
+            },
+            {
+                "Criterion": "Log_loss",
+                "Max Depth": "6",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.41,
+                "Avg CV F1 Score": 0.9094,
+                "Std CV Accuracy (%)": 2.51
+            },
+            {
+                "Criterion": "Log_loss",
+                "Max Depth": "8",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.41,
+                "Avg CV F1 Score": 0.9094,
+                "Std CV Accuracy (%)": 2.51
+            },
+            {
+                "Criterion": "Log_loss",
+                "Max Depth": "10",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.41,
+                "Avg CV F1 Score": 0.9094,
+                "Std CV Accuracy (%)": 2.51
+            },
+            {
+                "Criterion": "Log_loss",
+                "Max Depth": "None (Unpruned)",
+                "Min Samples Split": 10,
+                "Min Samples Leaf": 2,
+                "Avg CV Accuracy (%)": 93.41,
+                "Avg CV F1 Score": 0.9094,
+                "Std CV Accuracy (%)": 2.51
+            }
+        ]
+    },
+    "random_forest_tuning": {
+        "best_parameters": {
+            "bootstrap": 1,
+            "max_depth": 12,
+            "max_features": "0.5",
+            "n_estimators": 25
+        },
+        "best_cv_accuracy": 0.9758241758241759,
+        "tuning_time_seconds": 34.39759397506714,
+        "table2_hyperparameters": [
+            {
+                "n_estimators": 25,
+                "Max Depth": "3",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9462,
+                "Std CV Accuracy (%)": 2.26
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "3",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.38,
+                "Avg CV F1 Score": 0.9364,
+                "Std CV Accuracy (%)": 1.89
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "3",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9457,
+                "Std CV Accuracy (%)": 2.83
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "5",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.16,
+                "Avg CV F1 Score": 0.9341,
+                "Std CV Accuracy (%)": 2.15
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "5",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9461,
+                "Std CV Accuracy (%)": 1.12
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "5",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.26,
+                "Avg CV F1 Score": 0.9487,
+                "Std CV Accuracy (%)": 2.26
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "8",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9464,
+                "Std CV Accuracy (%)": 1.79
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "8",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.6,
+                "Avg CV F1 Score": 0.9406,
+                "Std CV Accuracy (%)": 1.2
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "8",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 97.36,
+                "Avg CV F1 Score": 0.9648,
+                "Std CV Accuracy (%)": 1.64
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.26,
+                "Avg CV F1 Score": 0.9492,
+                "Std CV Accuracy (%)": 1.49
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.6,
+                "Avg CV F1 Score": 0.9406,
+                "Std CV Accuracy (%)": 1.2
+            },
+            {
+                "n_estimators": 25,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 97.58,
+                "Avg CV F1 Score": 0.9677,
+                "Std CV Accuracy (%)": 1.89
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "3",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.82,
+                "Avg CV F1 Score": 0.9432,
+                "Std CV Accuracy (%)": 2.13
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "3",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.38,
+                "Avg CV F1 Score": 0.9369,
+                "Std CV Accuracy (%)": 1.89
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "3",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.82,
+                "Avg CV F1 Score": 0.9426,
+                "Std CV Accuracy (%)": 2.35
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "5",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.26,
+                "Avg CV F1 Score": 0.949,
+                "Std CV Accuracy (%)": 2.04
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "5",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.82,
+                "Avg CV F1 Score": 0.9434,
+                "Std CV Accuracy (%)": 1.28
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "5",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.26,
+                "Avg CV F1 Score": 0.9486,
+                "Std CV Accuracy (%)": 2.04
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "8",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9464,
+                "Std CV Accuracy (%)": 2.04
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "8",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9464,
+                "Std CV Accuracy (%)": 1.49
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "8",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 97.14,
+                "Avg CV F1 Score": 0.962,
+                "Std CV Accuracy (%)": 2.15
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9464,
+                "Std CV Accuracy (%)": 2.04
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9464,
+                "Std CV Accuracy (%)": 1.49
+            },
+            {
+                "n_estimators": 50,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 97.36,
+                "Avg CV F1 Score": 0.965,
+                "Std CV Accuracy (%)": 2.26
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "3",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.6,
+                "Avg CV F1 Score": 0.9401,
+                "Std CV Accuracy (%)": 1.97
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "3",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.82,
+                "Avg CV F1 Score": 0.9431,
+                "Std CV Accuracy (%)": 2.24
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "3",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9457,
+                "Std CV Accuracy (%)": 2.47
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "5",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.7,
+                "Avg CV F1 Score": 0.9553,
+                "Std CV Accuracy (%)": 2.09
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "5",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9465,
+                "Std CV Accuracy (%)": 1.32
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "5",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.48,
+                "Avg CV F1 Score": 0.9519,
+                "Std CV Accuracy (%)": 1.89
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "8",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.48,
+                "Avg CV F1 Score": 0.9519,
+                "Std CV Accuracy (%)": 1.46
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "8",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.48,
+                "Avg CV F1 Score": 0.9529,
+                "Std CV Accuracy (%)": 1.76
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "8",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 97.14,
+                "Avg CV F1 Score": 0.9614,
+                "Std CV Accuracy (%)": 1.79
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.48,
+                "Avg CV F1 Score": 0.9519,
+                "Std CV Accuracy (%)": 1.46
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.48,
+                "Avg CV F1 Score": 0.9529,
+                "Std CV Accuracy (%)": 1.76
+            },
+            {
+                "n_estimators": 100,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 97.14,
+                "Avg CV F1 Score": 0.9614,
+                "Std CV Accuracy (%)": 1.79
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "3",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.6,
+                "Avg CV F1 Score": 0.9401,
+                "Std CV Accuracy (%)": 1.97
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "3",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.16,
+                "Avg CV F1 Score": 0.9338,
+                "Std CV Accuracy (%)": 2.04
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "3",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.82,
+                "Avg CV F1 Score": 0.9426,
+                "Std CV Accuracy (%)": 2.35
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "5",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.6,
+                "Avg CV F1 Score": 0.9401,
+                "Std CV Accuracy (%)": 1.97
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "5",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9461,
+                "Std CV Accuracy (%)": 1.64
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "5",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.26,
+                "Avg CV F1 Score": 0.9487,
+                "Std CV Accuracy (%)": 2.04
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "8",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9464,
+                "Std CV Accuracy (%)": 1.79
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "8",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.48,
+                "Avg CV F1 Score": 0.9526,
+                "Std CV Accuracy (%)": 1.08
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "8",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.92,
+                "Avg CV F1 Score": 0.9583,
+                "Std CV Accuracy (%)": 1.89
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.26,
+                "Avg CV F1 Score": 0.9489,
+                "Std CV Accuracy (%)": 1.49
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.48,
+                "Avg CV F1 Score": 0.9526,
+                "Std CV Accuracy (%)": 1.08
+            },
+            {
+                "n_estimators": 200,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.92,
+                "Avg CV F1 Score": 0.9583,
+                "Std CV Accuracy (%)": 1.89
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "3",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.6,
+                "Avg CV F1 Score": 0.9401,
+                "Std CV Accuracy (%)": 1.97
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "3",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.16,
+                "Avg CV F1 Score": 0.9338,
+                "Std CV Accuracy (%)": 2.04
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "3",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.82,
+                "Avg CV F1 Score": 0.9426,
+                "Std CV Accuracy (%)": 2.35
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "5",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9461,
+                "Std CV Accuracy (%)": 1.64
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "5",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.48,
+                "Avg CV F1 Score": 0.9518,
+                "Std CV Accuracy (%)": 1.62
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "5",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.26,
+                "Avg CV F1 Score": 0.9487,
+                "Std CV Accuracy (%)": 2.04
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "8",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9461,
+                "Std CV Accuracy (%)": 1.64
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "8",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 95.82,
+                "Avg CV F1 Score": 0.9434,
+                "Std CV Accuracy (%)": 1.76
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "8",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.7,
+                "Avg CV F1 Score": 0.9552,
+                "Std CV Accuracy (%)": 1.84
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "sqrt",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9461,
+                "Std CV Accuracy (%)": 1.64
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "log2",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.04,
+                "Avg CV F1 Score": 0.9465,
+                "Std CV Accuracy (%)": 1.64
+            },
+            {
+                "n_estimators": 300,
+                "Max Depth": "None (Unpruned)",
+                "Max Features": "0.5",
+                "Bootstrap": true,
+                "Avg CV Accuracy (%)": 96.7,
+                "Avg CV F1 Score": 0.9552,
+                "Std CV Accuracy (%)": 1.84
+            }
+        ]
+    },
+    "table3_kfold_cv_comparison": {
+        "folds": [
+            "Fold 1",
+            "Fold 2",
+            "Fold 3",
+            "Fold 4",
+            "Fold 5"
+        ],
+        "decision_tree_scores": [
+            0.9340659340659341,
+            0.9560439560439561,
+            0.9010989010989011,
+            0.9560439560439561,
+            0.9560439560439561
+        ],
+        "random_forest_scores": [
+            0.967032967032967,
+            1.0,
+            0.978021978021978,
+            0.945054945054945,
+            0.989010989010989
+        ],
+        "dt_average": 0.9406593406593406,
+        "dt_std": 0.02153397576073125,
+        "rf_average": 0.9758241758241759,
+        "rf_std": 0.018906209378115674
+    },
+    "test_performance": {
+        "decision_tree": {
+            "accuracy": 0.9298245614035088,
+            "precision": 1.0,
+            "recall": 0.8095238095238095,
+            "f1_score": 0.8947368421052632,
+            "roc_auc": 0.9563492063492064,
+            "confusion_matrix": [
+                [
+                    72,
+                    0
+                ],
+                [
+                    8,
+                    34
+                ]
+            ],
+            "training_time": 0.0036640167236328125
+        },
+        "random_forest": {
+            "accuracy": 0.9736842105263158,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1_score": 0.9629629629629629,
+            "roc_auc": 0.990244708994709,
+            "confusion_matrix": [
+                [
+                    72,
+                    0
+                ],
+                [
+                    3,
+                    39
+                ]
+            ],
+            "training_time": 0.03357887268066406
+        }
+    },
+    "top_features_importance": {
+        "decision_tree": {
+            "perimeter_worst": 0.661085171826944,
+            "concave_points_worst": 0.11266400794856847,
+            "concave_points_mean": 0.08506215724538684,
+            "texture_worst": 0.07078612494592797,
+            "area_se": 0.04861887796486396,
+            "compactness_se": 0.01707828912828774,
+            "concavity_worst": 0.0047053709400210406,
+            "concavity_se": 0.0,
+            "symmetry_worst": 0.0,
+            "compactness_worst": 0.0
+        },
+        "random_forest": {
+            "perimeter_worst": 0.193230435232444,
+            "area_worst": 0.1764627470257064,
+            "concave_points_mean": 0.15348637073201035,
+            "radius_worst": 0.1338505207808933,
+            "concave_points_worst": 0.10221024281816288,
+            "texture_mean": 0.030481022359394858,
+            "radius_mean": 0.03040216873199807,
+            "perimeter_mean": 0.02687797896830735,
+            "area_se": 0.0191813137784098,
+            "texture_worst": 0.018067531130986685
+        }
+    }
+}
