@@ -1,0 +1,594 @@
+{
+    "experiment": "Experiment 6: Bagging, Boosting, and Stacked Ensemble Models",
+    "dataset": "Wisconsin Diagnostic Breast Cancer (WDBC)",
+    "samples": 569,
+    "train_samples": 455,
+    "test_samples": 114,
+    "bagging_table1": [
+        {
+            "n_estimators": 5,
+            "max_samples": 0.4,
+            "avg_cv_acc": 94.72527472527472,
+            "avg_cv_f1": 0.9261029411764706
+        },
+        {
+            "n_estimators": 5,
+            "max_samples": 0.6,
+            "avg_cv_acc": 94.94505494505493,
+            "avg_cv_f1": 0.9311792523333444
+        },
+        {
+            "n_estimators": 5,
+            "max_samples": 0.8,
+            "avg_cv_acc": 94.5054945054945,
+            "avg_cv_f1": 0.9262103538837515
+        },
+        {
+            "n_estimators": 5,
+            "max_samples": 1.0,
+            "avg_cv_acc": 95.82417582417581,
+            "avg_cv_f1": 0.9434975407460806
+        },
+        {
+            "n_estimators": 10,
+            "max_samples": 0.4,
+            "avg_cv_acc": 95.38461538461537,
+            "avg_cv_f1": 0.9352146828880805
+        },
+        {
+            "n_estimators": 10,
+            "max_samples": 0.6,
+            "avg_cv_acc": 94.94505494505493,
+            "avg_cv_f1": 0.9285300402212167
+        },
+        {
+            "n_estimators": 10,
+            "max_samples": 0.8,
+            "avg_cv_acc": 94.5054945054945,
+            "avg_cv_f1": 0.9225957171244057
+        },
+        {
+            "n_estimators": 10,
+            "max_samples": 1.0,
+            "avg_cv_acc": 96.04395604395606,
+            "avg_cv_f1": 0.9458995831481231
+        },
+        {
+            "n_estimators": 25,
+            "max_samples": 0.4,
+            "avg_cv_acc": 95.82417582417581,
+            "avg_cv_f1": 0.94253314001657
+        },
+        {
+            "n_estimators": 25,
+            "max_samples": 0.6,
+            "avg_cv_acc": 96.4835164835165,
+            "avg_cv_f1": 0.9525273125107425
+        },
+        {
+            "n_estimators": 25,
+            "max_samples": 0.8,
+            "avg_cv_acc": 96.92307692307693,
+            "avg_cv_f1": 0.9585316608548278
+        },
+        {
+            "n_estimators": 25,
+            "max_samples": 1.0,
+            "avg_cv_acc": 97.14285714285715,
+            "avg_cv_f1": 0.9621372130941929
+        },
+        {
+            "n_estimators": 50,
+            "max_samples": 0.4,
+            "avg_cv_acc": 96.04395604395603,
+            "avg_cv_f1": 0.9454304183308808
+        },
+        {
+            "n_estimators": 50,
+            "max_samples": 0.6,
+            "avg_cv_acc": 95.82417582417581,
+            "avg_cv_f1": 0.9424174071115992
+        },
+        {
+            "n_estimators": 50,
+            "max_samples": 0.8,
+            "avg_cv_acc": 96.4835164835165,
+            "avg_cv_f1": 0.9525770357697677
+        },
+        {
+            "n_estimators": 50,
+            "max_samples": 1.0,
+            "avg_cv_acc": 96.04395604395606,
+            "avg_cv_f1": 0.9466635289866957
+        },
+        {
+            "n_estimators": 100,
+            "max_samples": 0.4,
+            "avg_cv_acc": 96.26373626373628,
+            "avg_cv_f1": 0.949000856109065
+        },
+        {
+            "n_estimators": 100,
+            "max_samples": 0.6,
+            "avg_cv_acc": 95.38461538461537,
+            "avg_cv_f1": 0.9369578215901745
+        },
+        {
+            "n_estimators": 100,
+            "max_samples": 0.8,
+            "avg_cv_acc": 95.60439560439562,
+            "avg_cv_f1": 0.9398647186147187
+        },
+        {
+            "n_estimators": 100,
+            "max_samples": 1.0,
+            "avg_cv_acc": 96.26373626373628,
+            "avg_cv_f1": 0.9495620797113334
+        },
+        {
+            "n_estimators": 150,
+            "max_samples": 0.4,
+            "avg_cv_acc": 96.04395604395603,
+            "avg_cv_f1": 0.9458985246319547
+        },
+        {
+            "n_estimators": 150,
+            "max_samples": 0.6,
+            "avg_cv_acc": 95.60439560439559,
+            "avg_cv_f1": 0.9400268752986145
+        },
+        {
+            "n_estimators": 150,
+            "max_samples": 0.8,
+            "avg_cv_acc": 95.60439560439562,
+            "avg_cv_f1": 0.9398647186147187
+        },
+        {
+            "n_estimators": 150,
+            "max_samples": 1.0,
+            "avg_cv_acc": 95.82417582417584,
+            "avg_cv_f1": 0.9438206387544206
+        }
+    ],
+    "boosting_table2": [
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 10,
+            "learning_rate": 0.01,
+            "avg_cv_acc": 62.637362637362635,
+            "avg_cv_f1": 0.0
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 10,
+            "learning_rate": 0.05,
+            "avg_cv_acc": 92.96703296703296,
+            "avg_cv_f1": 0.9012546000805013
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 10,
+            "learning_rate": 0.1,
+            "avg_cv_acc": 94.5054945054945,
+            "avg_cv_f1": 0.9233148767603433
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 10,
+            "learning_rate": 0.5,
+            "avg_cv_acc": 96.04395604395603,
+            "avg_cv_f1": 0.9455851594868468
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 10,
+            "learning_rate": 1.0,
+            "avg_cv_acc": 94.28571428571428,
+            "avg_cv_f1": 0.9224509087299438
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 25,
+            "learning_rate": 0.01,
+            "avg_cv_acc": 90.32967032967034,
+            "avg_cv_f1": 0.8574251260555252
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 25,
+            "learning_rate": 0.05,
+            "avg_cv_acc": 95.16483516483515,
+            "avg_cv_f1": 0.933144150535455
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 25,
+            "learning_rate": 0.1,
+            "avg_cv_acc": 94.72527472527472,
+            "avg_cv_f1": 0.9274516508729734
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 25,
+            "learning_rate": 0.5,
+            "avg_cv_acc": 96.04395604395603,
+            "avg_cv_f1": 0.945056386129553
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 25,
+            "learning_rate": 1.0,
+            "avg_cv_acc": 95.82417582417581,
+            "avg_cv_f1": 0.942971762653501
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 50,
+            "learning_rate": 0.01,
+            "avg_cv_acc": 92.96703296703296,
+            "avg_cv_f1": 0.9012546000805013
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 50,
+            "learning_rate": 0.05,
+            "avg_cv_acc": 94.94505494505493,
+            "avg_cv_f1": 0.9312548601530164
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 50,
+            "learning_rate": 0.1,
+            "avg_cv_acc": 95.38461538461537,
+            "avg_cv_f1": 0.9375722846804937
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 50,
+            "learning_rate": 0.5,
+            "avg_cv_acc": 96.70329670329672,
+            "avg_cv_f1": 0.954643900064893
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 50,
+            "learning_rate": 1.0,
+            "avg_cv_acc": 96.04395604395603,
+            "avg_cv_f1": 0.945399672070665
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 100,
+            "learning_rate": 0.01,
+            "avg_cv_acc": 93.84615384615384,
+            "avg_cv_f1": 0.9138014734969401
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 100,
+            "learning_rate": 0.05,
+            "avg_cv_acc": 95.60439560439559,
+            "avg_cv_f1": 0.9412941755347374
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 100,
+            "learning_rate": 0.1,
+            "avg_cv_acc": 96.70329670329672,
+            "avg_cv_f1": 0.9552837817600958
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 100,
+            "learning_rate": 0.5,
+            "avg_cv_acc": 96.70329670329672,
+            "avg_cv_f1": 0.9542709168696877
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 100,
+            "learning_rate": 1.0,
+            "avg_cv_acc": 95.82417582417581,
+            "avg_cv_f1": 0.9426078237619159
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 200,
+            "learning_rate": 0.01,
+            "avg_cv_acc": 94.72527472527472,
+            "avg_cv_f1": 0.9276032464267757
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 200,
+            "learning_rate": 0.05,
+            "avg_cv_acc": 96.92307692307693,
+            "avg_cv_f1": 0.9580970809928324
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 200,
+            "learning_rate": 0.1,
+            "avg_cv_acc": 96.92307692307693,
+            "avg_cv_f1": 0.9581944960156206
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 200,
+            "learning_rate": 0.5,
+            "avg_cv_acc": 96.4835164835165,
+            "avg_cv_f1": 0.9513939327427036
+        },
+        {
+            "algorithm": "Gradient Boosting",
+            "n_estimators": 200,
+            "learning_rate": 1.0,
+            "avg_cv_acc": 95.82417582417581,
+            "avg_cv_f1": 0.9426078237619159
+        }
+    ],
+    "stacking_table3": [
+        {
+            "base_models": "SVM, Na\u00efve Bayes, Decision Tree",
+            "meta_learner": "Logistic Regression",
+            "avg_cv_acc": 96.26373626373628,
+            "avg_cv_f1": 0.948968932099825
+        },
+        {
+            "base_models": "SVM, Na\u00efve Bayes, Decision Tree",
+            "meta_learner": "Ridge Classifier",
+            "avg_cv_acc": 96.9230769230769,
+            "avg_cv_f1": 0.9580961561119594
+        },
+        {
+            "base_models": "SVM, Na\u00efve Bayes, Decision Tree",
+            "meta_learner": "Random Forest",
+            "avg_cv_acc": 96.48351648351647,
+            "avg_cv_f1": 0.9520232708468003
+        },
+        {
+            "base_models": "SVM, Decision Tree",
+            "meta_learner": "Logistic Regression",
+            "avg_cv_acc": 96.48351648351647,
+            "avg_cv_f1": 0.9517598819091356
+        },
+        {
+            "base_models": "SVM, Na\u00efve Bayes",
+            "meta_learner": "Logistic Regression",
+            "avg_cv_acc": 95.82417582417581,
+            "avg_cv_f1": 0.9428716871363931
+        },
+        {
+            "base_models": "Na\u00efve Bayes, Decision Tree",
+            "meta_learner": "Logistic Regression",
+            "avg_cv_acc": 93.62637362637362,
+            "avg_cv_f1": 0.9122362278244631
+        }
+    ],
+    "comparison_table4": [
+        {
+            "model": "Decision Tree (Baseline)",
+            "test_acc": 92.98245614035088,
+            "precision": 1.0,
+            "recall": 0.8095238095238095,
+            "f1_score": 0.8947368421052632,
+            "roc_auc": 0.9563492063492064,
+            "cv_acc_mean": 94.06593406593406,
+            "cv_acc_std": 2.1533975760731248
+        },
+        {
+            "model": "Bagging Classifier",
+            "test_acc": 97.36842105263158,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1_score": 0.9629629629629629,
+            "roc_auc": 0.9900793650793651,
+            "cv_acc_mean": 96.4835164835165,
+            "cv_acc_std": 1.4578570507056716
+        },
+        {
+            "model": "AdaBoost Classifier",
+            "test_acc": 96.49122807017544,
+            "precision": 1.0,
+            "recall": 0.9047619047619048,
+            "f1_score": 0.95,
+            "roc_auc": 0.994378306878307,
+            "cv_acc_mean": 96.04395604395603,
+            "cv_acc_std": 2.262775855161978
+        },
+        {
+            "model": "Gradient Boosting",
+            "test_acc": 96.49122807017544,
+            "precision": 1.0,
+            "recall": 0.9047619047619048,
+            "f1_score": 0.95,
+            "roc_auc": 0.9947089947089948,
+            "cv_acc_mean": 96.70329670329672,
+            "cv_acc_std": 1.3900121583157732
+        },
+        {
+            "model": "Stacked Ensemble",
+            "test_acc": 96.49122807017544,
+            "precision": 1.0,
+            "recall": 0.9047619047619048,
+            "f1_score": 0.95,
+            "roc_auc": 0.9947089947089947,
+            "cv_acc_mean": 96.26373626373628,
+            "cv_acc_std": 1.7855029460738379
+        }
+    ],
+    "test_metrics_detail": {
+        "Decision Tree (Baseline)": {
+            "accuracy": 0.9298245614035088,
+            "precision": 1.0,
+            "recall": 0.8095238095238095,
+            "f1": 0.8947368421052632,
+            "roc_auc": 0.9563492063492064,
+            "specificity": 1.0,
+            "log_loss": 1.011875930984019,
+            "fit_time_sec": 0.003374814987182617,
+            "confusion_matrix": [
+                [
+                    72,
+                    0
+                ],
+                [
+                    8,
+                    34
+                ]
+            ],
+            "cv_mean": 94.06593406593406,
+            "cv_std": 2.1533975760731248,
+            "fold_scores": [
+                93.4065934065934,
+                95.6043956043956,
+                90.10989010989012,
+                95.6043956043956,
+                95.6043956043956
+            ]
+        },
+        "Bagging Classifier": {
+            "accuracy": 0.9736842105263158,
+            "precision": 1.0,
+            "recall": 0.9285714285714286,
+            "f1": 0.9629629629629629,
+            "roc_auc": 0.9900793650793651,
+            "specificity": 1.0,
+            "log_loss": 0.12249669909561307,
+            "fit_time_sec": 0.04499101638793945,
+            "confusion_matrix": [
+                [
+                    72,
+                    0
+                ],
+                [
+                    3,
+                    39
+                ]
+            ],
+            "cv_mean": 96.4835164835165,
+            "cv_std": 1.4578570507056716,
+            "fold_scores": [
+                96.7032967032967,
+                98.9010989010989,
+                95.6043956043956,
+                94.5054945054945,
+                96.7032967032967
+            ]
+        },
+        "AdaBoost Classifier": {
+            "accuracy": 0.9649122807017544,
+            "precision": 1.0,
+            "recall": 0.9047619047619048,
+            "f1": 0.95,
+            "roc_auc": 0.994378306878307,
+            "specificity": 1.0,
+            "log_loss": 0.2870345525068903,
+            "fit_time_sec": 0.10590696334838867,
+            "confusion_matrix": [
+                [
+                    72,
+                    0
+                ],
+                [
+                    4,
+                    38
+                ]
+            ],
+            "cv_mean": 96.04395604395603,
+            "cv_std": 2.262775855161978,
+            "fold_scores": [
+                93.4065934065934,
+                97.8021978021978,
+                96.7032967032967,
+                93.4065934065934,
+                98.9010989010989
+            ]
+        },
+        "Gradient Boosting": {
+            "accuracy": 0.9649122807017544,
+            "precision": 1.0,
+            "recall": 0.9047619047619048,
+            "f1": 0.95,
+            "roc_auc": 0.9947089947089948,
+            "specificity": 1.0,
+            "log_loss": 0.1279332241365253,
+            "fit_time_sec": 0.18761706352233887,
+            "confusion_matrix": [
+                [
+                    72,
+                    0
+                ],
+                [
+                    4,
+                    38
+                ]
+            ],
+            "cv_mean": 96.70329670329672,
+            "cv_std": 1.3900121583157732,
+            "fold_scores": [
+                96.7032967032967,
+                96.7032967032967,
+                94.5054945054945,
+                96.7032967032967,
+                98.9010989010989
+            ]
+        },
+        "Stacked Ensemble": {
+            "accuracy": 0.9649122807017544,
+            "precision": 1.0,
+            "recall": 0.9047619047619048,
+            "f1": 0.95,
+            "roc_auc": 0.9947089947089947,
+            "specificity": 1.0,
+            "log_loss": 0.10873374421166358,
+            "fit_time_sec": 0.05717825889587402,
+            "confusion_matrix": [
+                [
+                    72,
+                    0
+                ],
+                [
+                    4,
+                    38
+                ]
+            ],
+            "cv_mean": 96.26373626373628,
+            "cv_std": 1.7855029460738379,
+            "fold_scores": [
+                96.7032967032967,
+                98.9010989010989,
+                96.7032967032967,
+                93.4065934065934,
+                95.6043956043956
+            ]
+        }
+    },
+    "bias_variance_decomposition": {
+        "Decision Tree (Baseline)": {
+            "expected_loss": 0.07359649122807017,
+            "bias": 0.043859649122807015,
+            "variance": 0.05798245614035088
+        },
+        "Bagging Classifier": {
+            "expected_loss": 0.05,
+            "bias": 0.03508771929824561,
+            "variance": 0.024210526315789474
+        },
+        "AdaBoost Classifier": {
+            "expected_loss": 0.035701754385964915,
+            "bias": 0.03508771929824561,
+            "variance": 0.012543859649122807
+        },
+        "Gradient Boosting": {
+            "expected_loss": 0.04254385964912281,
+            "bias": 0.03508771929824561,
+            "variance": 0.01868421052631579
+        },
+        "Stacked Ensemble": {
+            "expected_loss": 0.037719298245614034,
+            "bias": 0.03508771929824561,
+            "variance": 0.01649122807017544
+        }
+    }
+}
