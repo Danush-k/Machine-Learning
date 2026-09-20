@@ -1,0 +1,735 @@
+{
+  "dataset_info": {
+    "n_samples": 10299,
+    "n_features": 561,
+    "n_subjects": 30,
+    "n_activities": 6,
+    "activity_names": {
+      "1": "WALKING",
+      "2": "WALKING_UPSTAIRS",
+      "3": "WALKING_DOWNSTAIRS",
+      "4": "SITTING",
+      "5": "STANDING",
+      "6": "LAYING"
+    }
+  },
+  "pca_info": {
+    "total_features": 561,
+    "n_comp_90": 65,
+    "n_comp_95": 104,
+    "n_comp_99": 182,
+    "chosen_components": 65,
+    "variance_target_pct": 90.0,
+    "actual_explained_variance_pct": 90.04833346822923,
+    "dimension_reduction_pct": 88.41354723707666,
+    "pca_table": [
+      {
+        "component": 1,
+        "eigenvalue": 284.66906046282475,
+        "explained_variance_pct": 50.73822103501331,
+        "cumulative_variance_pct": 50.73822103501331
+      },
+      {
+        "component": 2,
+        "eigenvalue": 35.00523109496814,
+        "explained_variance_pct": 6.239185775196521,
+        "cumulative_variance_pct": 56.97740681020983
+      },
+      {
+        "component": 3,
+        "eigenvalue": 15.106750086962892,
+        "explained_variance_pct": 2.6925638627072592,
+        "cumulative_variance_pct": 59.669970672917096
+      },
+      {
+        "component": 4,
+        "eigenvalue": 13.7619423682319,
+        "explained_variance_pct": 2.452870967484894,
+        "cumulative_variance_pct": 62.12284164040198
+      },
+      {
+        "component": 5,
+        "eigenvalue": 10.5979580659802,
+        "explained_variance_pct": 1.888935657416578,
+        "cumulative_variance_pct": 64.01177729781857
+      },
+      {
+        "component": 6,
+        "eigenvalue": 9.15301694303982,
+        "explained_variance_pct": 1.6313954036245668,
+        "cumulative_variance_pct": 65.64317270144313
+      },
+      {
+        "component": 7,
+        "eigenvalue": 7.936302046168851,
+        "explained_variance_pct": 1.4145332364692622,
+        "cumulative_variance_pct": 67.05770593791239
+      },
+      {
+        "component": 8,
+        "eigenvalue": 6.823604100854557,
+        "explained_variance_pct": 1.2162106150970162,
+        "cumulative_variance_pct": 68.2739165530094
+      },
+      {
+        "component": 9,
+        "eigenvalue": 5.527775562079824,
+        "explained_variance_pct": 0.9852475637666913,
+        "cumulative_variance_pct": 69.25916411677609
+      },
+      {
+        "component": 10,
+        "eigenvalue": 5.325687271110776,
+        "explained_variance_pct": 0.9492281932066979,
+        "cumulative_variance_pct": 70.2083923099828
+      },
+      {
+        "component": 11,
+        "eigenvalue": 4.815550945853209,
+        "explained_variance_pct": 0.8583036312369998,
+        "cumulative_variance_pct": 71.06669594121979
+      },
+      {
+        "component": 12,
+        "eigenvalue": 4.5444285361439265,
+        "explained_variance_pct": 0.8099799084937919,
+        "cumulative_variance_pct": 71.87667584971359
+      },
+      {
+        "component": 13,
+        "eigenvalue": 4.296906792646037,
+        "explained_variance_pct": 0.7658626696475708,
+        "cumulative_variance_pct": 72.64253851936115
+      },
+      {
+        "component": 14,
+        "eigenvalue": 3.7964739560143856,
+        "explained_variance_pct": 0.676667616848669,
+        "cumulative_variance_pct": 73.31920613620983
+      },
+      {
+        "component": 15,
+        "eigenvalue": 3.53599881008549,
+        "explained_variance_pct": 0.6302416178069026,
+        "cumulative_variance_pct": 73.94944775401673
+      },
+      {
+        "component": 16,
+        "eigenvalue": 3.454511904317779,
+        "explained_variance_pct": 0.6157177330209008,
+        "cumulative_variance_pct": 74.56516548703763
+      },
+      {
+        "component": 17,
+        "eigenvalue": 3.3401534176125405,
+        "explained_variance_pct": 0.5953349553272296,
+        "cumulative_variance_pct": 75.16050044236486
+      },
+      {
+        "component": 18,
+        "eigenvalue": 3.2383811589329183,
+        "explained_variance_pct": 0.5771954942009525,
+        "cumulative_variance_pct": 75.73769593656581
+      },
+      {
+        "component": 19,
+        "eigenvalue": 3.1611564604865983,
+        "explained_variance_pct": 0.5634312873961764,
+        "cumulative_variance_pct": 76.301127223962
+      },
+      {
+        "component": 20,
+        "eigenvalue": 3.0343501066322944,
+        "explained_variance_pct": 0.5408298539982396,
+        "cumulative_variance_pct": 76.84195707796023
+      },
+      {
+        "component": 21,
+        "eigenvalue": 2.9109069928281253,
+        "explained_variance_pct": 0.5188278704203153,
+        "cumulative_variance_pct": 77.36078494838054
+      },
+      {
+        "component": 22,
+        "eigenvalue": 2.8206546216110393,
+        "explained_variance_pct": 0.5027416657857073,
+        "cumulative_variance_pct": 77.86352661416626
+      },
+      {
+        "component": 23,
+        "eigenvalue": 2.6550751718859895,
+        "explained_variance_pct": 0.4732294781761846,
+        "cumulative_variance_pct": 78.33675609234244
+      },
+      {
+        "component": 24,
+        "eigenvalue": 2.602274241622346,
+        "explained_variance_pct": 0.4638184615162939,
+        "cumulative_variance_pct": 78.80057455385874
+      },
+      {
+        "component": 25,
+        "eigenvalue": 2.5070630503873277,
+        "explained_variance_pct": 0.4468484175711067,
+        "cumulative_variance_pct": 79.24742297142984
+      },
+      {
+        "component": 26,
+        "eigenvalue": 2.467900589667075,
+        "explained_variance_pct": 0.4398682645995522,
+        "cumulative_variance_pct": 79.6872912360294
+      },
+      {
+        "component": 27,
+        "eigenvalue": 2.3388288193622464,
+        "explained_variance_pct": 0.41686305286189634,
+        "cumulative_variance_pct": 80.1041542888913
+      },
+      {
+        "component": 28,
+        "eigenvalue": 2.248754602746358,
+        "explained_variance_pct": 0.4008086017572268,
+        "cumulative_variance_pct": 80.50496289064853
+      },
+      {
+        "component": 29,
+        "eigenvalue": 2.182905266738127,
+        "explained_variance_pct": 0.3890718919090879,
+        "cumulative_variance_pct": 80.89403478255761
+      },
+      {
+        "component": 30,
+        "eigenvalue": 2.139517137574574,
+        "explained_variance_pct": 0.3813385734929001,
+        "cumulative_variance_pct": 81.27537335605051
+      }
+    ]
+  },
+  "kmeans": {
+    "elbow_table": [
+      {
+        "k": 2,
+        "wcss": 2697926.75822988,
+        "silhouette": 0.43664008935438453,
+        "davies_bouldin": 0.9611492920836956,
+        "calinski_harabasz": 9560.023799651606,
+        "ari": 0.3296106738894193,
+        "nmi": 0.5454638590374131,
+        "fit_time_sec": 0.04740476608276367
+      },
+      {
+        "k": 3,
+        "wcss": 2346425.1043448616,
+        "silhouette": 0.35191590691115715,
+        "davies_bouldin": 1.5974206097235768,
+        "calinski_harabasz": 6266.724678621789,
+        "ari": 0.3318296726527975,
+        "nmi": 0.5184322289430947,
+        "fit_time_sec": 0.05959296226501465
+      },
+      {
+        "k": 4,
+        "wcss": 2207133.309572337,
+        "silhouette": 0.1822773592253294,
+        "davies_bouldin": 2.0572605126996373,
+        "calinski_harabasz": 4657.618214046272,
+        "ari": 0.2985498672198493,
+        "nmi": 0.4692993411061121,
+        "fit_time_sec": 0.08219480514526367
+      },
+      {
+        "k": 5,
+        "wcss": 2081104.6375941304,
+        "silhouette": 0.15971010085274034,
+        "davies_bouldin": 2.137908899095667,
+        "calinski_harabasz": 3860.2479387899375,
+        "ari": 0.29121345757327444,
+        "nmi": 0.4603896982745069,
+        "fit_time_sec": 0.09626078605651855
+      },
+      {
+        "k": 6,
+        "wcss": 2003581.4192694551,
+        "silhouette": 0.14004295453724894,
+        "davies_bouldin": 2.0675147622580567,
+        "calinski_harabasz": 3287.026975341897,
+        "ari": 0.420052557165744,
+        "nmi": 0.559735727123636,
+        "fit_time_sec": 0.10560894012451172
+      },
+      {
+        "k": 7,
+        "wcss": 1947312.305533228,
+        "silhouette": 0.11843168554895395,
+        "davies_bouldin": 2.2854319673980603,
+        "calinski_harabasz": 2867.631428518836,
+        "ari": 0.4155103964234261,
+        "nmi": 0.5455885820749778,
+        "fit_time_sec": 0.10254883766174316
+      },
+      {
+        "k": 8,
+        "wcss": 1892509.023282697,
+        "silhouette": 0.10165517918479673,
+        "davies_bouldin": 2.2514904732421925,
+        "calinski_harabasz": 2571.4780502904982,
+        "ari": 0.4306586585693338,
+        "nmi": 0.5542022207828821,
+        "fit_time_sec": 0.1121678352355957
+      }
+    ],
+    "best_k": 2
+  },
+  "dbscan": {
+    "grid_search": [
+      {
+        "eps": 13.68,
+        "min_pts": 5,
+        "n_clusters": 11,
+        "noise_ratio": 0.09049422274007185,
+        "silhouette": -0.013677929299252396,
+        "ari": 0.021205879377628294,
+        "nmi": 0.08063299655624348
+      },
+      {
+        "eps": 13.68,
+        "min_pts": 10,
+        "n_clusters": 4,
+        "noise_ratio": 0.11224390717545393,
+        "silhouette": 0.24097356569114653,
+        "ari": 0.028895778877380048,
+        "nmi": 0.0889404014870317
+      },
+      {
+        "eps": 13.68,
+        "min_pts": 15,
+        "n_clusters": 4,
+        "noise_ratio": 0.1332168171667152,
+        "silhouette": 0.21385584424982776,
+        "ari": 0.03924366638675092,
+        "nmi": 0.11028016994998353
+      },
+      {
+        "eps": 13.68,
+        "min_pts": 20,
+        "n_clusters": 3,
+        "noise_ratio": 0.15040295174288765,
+        "silhouette": 0.2924826437969682,
+        "ari": 0.04581742399848594,
+        "nmi": 0.11799742698656579
+      },
+      {
+        "eps": 14.5,
+        "min_pts": 5,
+        "n_clusters": 5,
+        "noise_ratio": 0.0668026021943878,
+        "silhouette": 0.06277169079701293,
+        "ari": 0.014462364597380593,
+        "nmi": 0.06427183683674076
+      },
+      {
+        "eps": 14.5,
+        "min_pts": 10,
+        "n_clusters": 4,
+        "noise_ratio": 0.0804932517720167,
+        "silhouette": 0.22096104460814567,
+        "ari": 0.0179772032688541,
+        "nmi": 0.072006759202331
+      },
+      {
+        "eps": 14.5,
+        "min_pts": 15,
+        "n_clusters": 2,
+        "noise_ratio": 0.09127099718419264,
+        "silhouette": 0.3550773455353049,
+        "ari": 0.020624029589927147,
+        "nmi": 0.07201412757759891
+      },
+      {
+        "eps": 14.5,
+        "min_pts": 20,
+        "n_clusters": 2,
+        "noise_ratio": 0.10156325856879309,
+        "silhouette": 0.36791937240570877,
+        "ari": 0.023714892853700195,
+        "nmi": 0.07776270517859518
+      },
+      {
+        "eps": 15.13,
+        "min_pts": 5,
+        "n_clusters": 6,
+        "noise_ratio": 0.0535003398388193,
+        "silhouette": 0.041096277651139226,
+        "ari": 0.01054154250258936,
+        "nmi": 0.05536874273147793
+      },
+      {
+        "eps": 15.13,
+        "min_pts": 10,
+        "n_clusters": 2,
+        "noise_ratio": 0.06563744052820662,
+        "silhouette": 0.34361463274249593,
+        "ari": 0.013291982643153859,
+        "nmi": 0.05780772524103883
+      },
+      {
+        "eps": 15.13,
+        "min_pts": 15,
+        "n_clusters": 2,
+        "noise_ratio": 0.0733080881638994,
+        "silhouette": 0.33977245593142336,
+        "ari": 0.014693539579148615,
+        "nmi": 0.06042454886117984
+      },
+      {
+        "eps": 15.13,
+        "min_pts": 20,
+        "n_clusters": 2,
+        "noise_ratio": 0.07855131566171474,
+        "silhouette": 0.3259500466777548,
+        "ari": 0.016255160891003106,
+        "nmi": 0.06317433868796136
+      },
+      {
+        "eps": 15.66,
+        "min_pts": 5,
+        "n_clusters": 5,
+        "noise_ratio": 0.041848723177007476,
+        "silhouette": 0.19889347801438972,
+        "ari": 0.0069435080767819846,
+        "nmi": 0.036836859294771936
+      },
+      {
+        "eps": 15.66,
+        "min_pts": 10,
+        "n_clusters": 3,
+        "noise_ratio": 0.053306146227789106,
+        "silhouette": 0.3122331631477221,
+        "ari": 0.010247864080888475,
+        "nmi": 0.052378423053640176
+      },
+      {
+        "eps": 15.66,
+        "min_pts": 15,
+        "n_clusters": 2,
+        "noise_ratio": 0.058743567336634626,
+        "silhouette": 0.3483180572224757,
+        "ari": 0.011058173352093775,
+        "nmi": 0.05202421855486917
+      },
+      {
+        "eps": 15.66,
+        "min_pts": 20,
+        "n_clusters": 2,
+        "noise_ratio": 0.06486066608408583,
+        "silhouette": 0.3472021085659255,
+        "ari": 0.011921752099919981,
+        "nmi": 0.05318304166380732
+      },
+      {
+        "eps": 16.35,
+        "min_pts": 5,
+        "n_clusters": 2,
+        "noise_ratio": 0.0334013010971939,
+        "silhouette": 0.3698107875729033,
+        "ari": 0.004572070891758643,
+        "nmi": 0.02586467925080979
+      },
+      {
+        "eps": 16.35,
+        "min_pts": 10,
+        "n_clusters": 2,
+        "noise_ratio": 0.042042916788037676,
+        "silhouette": 0.2585836447144591,
+        "ari": 0.006837967977022206,
+        "nmi": 0.03520498839919578
+      },
+      {
+        "eps": 16.35,
+        "min_pts": 15,
+        "n_clusters": 2,
+        "noise_ratio": 0.04816001553548888,
+        "silhouette": 0.3508019401342383,
+        "ari": 0.00835309887973482,
+        "nmi": 0.045244982526078184
+      },
+      {
+        "eps": 16.35,
+        "min_pts": 20,
+        "n_clusters": 2,
+        "noise_ratio": 0.05233517817263812,
+        "silhouette": 0.33833971995598405,
+        "ari": 0.009049297583276016,
+        "nmi": 0.04625554725788187
+      },
+      {
+        "eps": 18.04,
+        "min_pts": 5,
+        "n_clusters": 2,
+        "noise_ratio": 0.02165258762986698,
+        "silhouette": 0.40912793916749285,
+        "ari": 0.0027010847795520955,
+        "nmi": 0.01913026085976772
+      },
+      {
+        "eps": 18.04,
+        "min_pts": 10,
+        "n_clusters": 1,
+        "noise_ratio": 0.026021943878046412,
+        "silhouette": NaN,
+        "ari": 0.0034670631788183987,
+        "nmi": 0.022020626375268994
+      },
+      {
+        "eps": 18.04,
+        "min_pts": 15,
+        "n_clusters": 1,
+        "noise_ratio": 0.027575492766287988,
+        "silhouette": NaN,
+        "ari": 0.0037802910561743892,
+        "nmi": 0.023427557740628015
+      },
+      {
+        "eps": 18.04,
+        "min_pts": 20,
+        "n_clusters": 1,
+        "noise_ratio": 0.03019710651519565,
+        "silhouette": NaN,
+        "ari": 0.004096429687604655,
+        "nmi": 0.02426520859095185
+      }
+    ],
+    "best_config": {
+      "eps": 18.04,
+      "min_pts": 5,
+      "n_clusters": 2,
+      "noise_ratio": 0.02165258762986698,
+      "silhouette": 0.40912793916749285,
+      "ari": 0.0027010847795520955,
+      "nmi": 0.01913026085976772
+    }
+  },
+  "hierarchical": {
+    "linkage_comparison": {
+      "single": {
+        "silhouette": 0.5539280634483077,
+        "davies_bouldin": 0.28360341202217537,
+        "calinski_harabasz": 12.899334330572017,
+        "ari": 0.0003171931666645424,
+        "nmi": 0.004436026038432916,
+        "fit_time_sec": 0.08221888542175293
+      },
+      "complete": {
+        "silhouette": 0.3636240046471301,
+        "davies_bouldin": 1.5830736004848953,
+        "calinski_harabasz": 630.7819760796615,
+        "ari": 0.325265058835108,
+        "nmi": 0.5298357530930945,
+        "fit_time_sec": 0.07679009437561035
+      },
+      "average": {
+        "silhouette": 0.3449727304561509,
+        "davies_bouldin": 1.147017444961939,
+        "calinski_harabasz": 57.75190176848134,
+        "ari": 0.0031277493968786163,
+        "nmi": 0.03457341156510472,
+        "fit_time_sec": 0.07204198837280273
+      },
+      "ward": {
+        "silhouette": 0.15853572619538134,
+        "davies_bouldin": 2.208680428822356,
+        "calinski_harabasz": 776.5733615466354,
+        "ari": 0.3048047043017134,
+        "nmi": 0.4755138144085523,
+        "fit_time_sec": 0.07303905487060547
+      }
+    },
+    "best_linkage": "ward",
+    "subsample_size": 2497
+  },
+  "metrics_summary": {
+    "algo_names": [
+      "K-Means",
+      "DBSCAN",
+      "Hierarchical"
+    ],
+    "sil_vals": [
+      0.43664008935438453,
+      0.40912793916749285,
+      0.15853572619538134
+    ],
+    "db_vals": [
+      0.9611492920836956,
+      null,
+      2.208680428822356
+    ],
+    "ch_vals": [
+      9560.023799651606,
+      null,
+      776.5733615466354
+    ],
+    "ari_vals": [
+      0.3296106738894193,
+      0.0027010847795520955,
+      0.3048047043017134
+    ],
+    "nmi_vals": [
+      0.5454638590374131,
+      0.01913026085976772,
+      0.4755138144085523
+    ]
+  },
+  "contingency_matrices": {
+    "kmeans": [
+      [
+        1722,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        1536,
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      [
+        1406,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        3,
+        0,
+        0,
+        0,
+        0,
+        1774
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1906
+      ],
+      [
+        12,
+        0,
+        0,
+        0,
+        0,
+        1932
+      ]
+    ],
+    "dbscan": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1697
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1524
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1264
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1772
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1905
+      ],
+      [
+        0,
+        4,
+        0,
+        0,
+        0,
+        1910
+      ]
+    ],
+    "hierarchical": [
+      [
+        227,
+        89,
+        102,
+        0,
+        0,
+        0
+      ],
+      [
+        93,
+        260,
+        21,
+        0,
+        0,
+        0
+      ],
+      [
+        196,
+        47,
+        77,
+        21,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        83,
+        347
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        119,
+        343
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        36,
+        435
+      ]
+    ]
+  },
+  "runtime_sec": 18.13485598564148
+}
