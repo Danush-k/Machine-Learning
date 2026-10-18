@@ -1,0 +1,382 @@
+{
+  "task1_baseline": {
+    "Unregularized": {
+      "Train_Accuracy": 0.9908842297174111,
+      "Test_Accuracy": 0.9854545454545455,
+      "Precision": 0.9682539682539683,
+      "Recall": 1.0,
+      "F1_Score": 0.9838709677419355,
+      "ROC_AUC": 1.0,
+      "Log_Loss": 0.0213376236621095,
+      "Weights": [
+        -19.76064805813193,
+        -22.729255694597274,
+        -20.848700817651665,
+        -1.2984857785560258
+      ],
+      "Intercept": -9.494153524942426,
+      "Weight_L2_Norm": 36.65319450210033
+    },
+    "L2_Regularized (C=1.0)": {
+      "Train_Accuracy": 0.9845031905195989,
+      "Test_Accuracy": 0.9709090909090909,
+      "Precision": 0.9384615384615385,
+      "Recall": 1.0,
+      "F1_Score": 0.9682539682539683,
+      "ROC_AUC": 0.9999464266580949,
+      "Log_Loss": 0.05411011536532576,
+      "Weights": [
+        -4.66600886318205,
+        -4.806524499136788,
+        -4.3988579189182735,
+        0.2579655514757694
+      ],
+      "Intercept": -1.399903375867123,
+      "Weight_L2_Norm": 8.018155254712507
+    }
+  },
+  "task2_regularization": {
+    "best_lambda": 0.0001,
+    "best_test_accuracy": 0.9854545454545455,
+    "weights_at_best_lambda": [
+      -19.60727665438559,
+      -22.559718839757032,
+      -20.688988405868233,
+      -1.2832945369134205
+    ],
+    "weight_norm_at_best_lambda": 36.37399205554876
+  },
+  "task3_3d_hyperplane": {
+    "features": [
+      "variance",
+      "skewness",
+      "curtosis"
+    ],
+    "weights": [
+      -4.562880058996708,
+      -4.988361623205192,
+      -4.416015292560134
+    ],
+    "intercept": -1.447992240929477,
+    "test_accuracy": 0.9709090909090909
+  },
+  "task4_neural_comparison": {
+    "Logistic Regression (L2)": {
+      "Train_Acc": 0.9845031905195989,
+      "Test_Acc": 0.9709090909090909,
+      "Precision": 0.9384615384615385,
+      "Recall": 1.0,
+      "F1_Score": 0.9682539682539683,
+      "ROC_AUC": 0.9999464266580949,
+      "Parameters": 5,
+      "Generalization_Gap": 0.013594099610507948
+    },
+    "Single-Layer NN (SLP)": {
+      "Train_Acc": 0.9845031905195989,
+      "Test_Acc": 0.9709090909090909,
+      "Precision": 0.9384615384615385,
+      "Recall": 1.0,
+      "F1_Score": 0.9682539682539683,
+      "ROC_AUC": 1.0,
+      "Parameters": 5,
+      "Generalization_Gap": 0.013594099610507948
+    },
+    "Multi-Layer MLP (4-16-8-1)": {
+      "Train_Acc": 1.0,
+      "Test_Acc": 1.0,
+      "Precision": 1.0,
+      "Recall": 1.0,
+      "F1_Score": 1.0,
+      "ROC_AUC": 1.0,
+      "Parameters": 225,
+      "Generalization_Gap": 0.0
+    }
+  },
+  "task5_pca": {
+    "eigenvalues": [
+      2.169642251310619,
+      1.3097998907468542,
+      0.35311663796769743,
+      0.17109085501132004
+    ],
+    "explained_variance_ratio": [
+      0.5419161138186969,
+      0.3271514768137088,
+      0.08819868623805766,
+      0.0427337231295367
+    ],
+    "cumulative_variance_ratio": [
+      0.5419161138186969,
+      0.8690675906324057,
+      0.9572662768704634,
+      1.0
+    ],
+    "comparison_results": {
+      "Original 4D": {
+        "Logistic Regression": 0.9709090909090909,
+        "Multi-Layer MLP": 1.0
+      },
+      "PCA 3 Components": {
+        "Logistic Regression": 0.9054545454545454,
+        "Multi-Layer MLP": 0.9527272727272728
+      },
+      "PCA 2 Components": {
+        "Logistic Regression": 0.7963636363636364,
+        "Multi-Layer MLP": 0.8545454545454545
+      }
+    }
+  },
+  "task6_statistical_tests": {
+    "cv_summary": {
+      "Logistic (Unreg)": {
+        "count": 10.0,
+        "mean": 0.9919760922458478,
+        "std": 0.011123638571257767,
+        "min": 0.9635036496350365,
+        "25%": 0.9927007299270073,
+        "50%": 0.9927271765577066,
+        "75%": 1.0,
+        "max": 1.0
+      },
+      "Logistic (L2)": {
+        "count": 10.0,
+        "mean": 0.9810483444409183,
+        "std": 0.01295327186125867,
+        "min": 0.9635036496350365,
+        "25%": 0.9708558129694277,
+        "50%": 0.9854014598540146,
+        "75%": 0.9908759124087592,
+        "max": 1.0
+      },
+      "SLP (Single-Layer)": {
+        "count": 10.0,
+        "mean": 0.9817782714482174,
+        "std": 0.012027328811091448,
+        "min": 0.9635036496350365,
+        "25%": 0.9708558129694277,
+        "50%": 0.9854014598540146,
+        "75%": 0.9908759124087592,
+        "max": 1.0
+      },
+      "MLP (Multi-Layer)": {
+        "count": 10.0,
+        "mean": 1.0,
+        "std": 0.0,
+        "min": 1.0,
+        "25%": 1.0,
+        "50%": 1.0,
+        "75%": 1.0,
+        "max": 1.0
+      },
+      "Logistic (PCA k=2)": {
+        "count": 10.0,
+        "mean": 0.7580556437109911,
+        "std": 0.033870789596062746,
+        "min": 0.6739130434782609,
+        "25%": 0.7536496350364963,
+        "50%": 0.7627737226277371,
+        "75%": 0.7791970802919709,
+        "max": 0.7898550724637681
+      },
+      "MLP (PCA k=2)": {
+        "count": 10.0,
+        "mean": 0.817814450439014,
+        "std": 0.04080718982857589,
+        "min": 0.7318840579710145,
+        "25%": 0.7956204379562044,
+        "50%": 0.8248175182481752,
+        "75%": 0.8448905109489051,
+        "max": 0.8623188405797102
+      }
+    },
+    "anova": {
+      "F_statistic": 206.01710957874528,
+      "p_value": 7.05826817470688e-34,
+      "table": {
+        "Source": [
+          "Between Groups (Treatments)",
+          "Within Groups (Error)",
+          "Total"
+        ],
+        "SS": [
+          0.5577288932526252,
+          0.029237727193847454,
+          0.5869666204464726
+        ],
+        "df": [
+          5,
+          54,
+          59
+        ],
+        "MS": [
+          0.11154577865052503,
+          0.0005414393924786566,
+          null
+        ],
+        "F": [
+          206.01710957874528,
+          null,
+          null
+        ],
+        "p_value": [
+          7.05826817470688e-34,
+          null,
+          null
+        ]
+      },
+      "levene_p": 0.0010215693125356286
+    },
+    "friedman": {
+      "chi2_statistic": 46.785714285714285,
+      "p_value": 6.282596341532323e-09,
+      "iman_davenport_F": 130.99999999999994,
+      "iman_davenport_p": 1.205015413925787e-25,
+      "mean_ranks": {
+        "Logistic (Unreg)": 2.25,
+        "Logistic (L2)": 3.3,
+        "SLP (Single-Layer)": 3.15,
+        "MLP (Multi-Layer)": 1.3,
+        "Logistic (PCA k=2)": 6.0,
+        "MLP (PCA k=2)": 5.0
+      },
+      "nemenyi_CD_005": 2.3844810756221153
+    },
+    "tukey_hsd": [
+      {
+        "group1": "Logistic (L2)",
+        "group2": "Logistic (PCA k=2)",
+        "meandiff": -0.223,
+        "p-adj": 0.0,
+        "lower": -0.2537,
+        "upper": -0.1922,
+        "reject": true
+      },
+      {
+        "group1": "Logistic (L2)",
+        "group2": "Logistic (Unreg)",
+        "meandiff": 0.0109,
+        "p-adj": 0.8985,
+        "lower": -0.0198,
+        "upper": 0.0417,
+        "reject": false
+      },
+      {
+        "group1": "Logistic (L2)",
+        "group2": "MLP (Multi-Layer)",
+        "meandiff": 0.019,
+        "p-adj": 0.4612,
+        "lower": -0.0118,
+        "upper": 0.0497,
+        "reject": false
+      },
+      {
+        "group1": "Logistic (L2)",
+        "group2": "MLP (PCA k=2)",
+        "meandiff": -0.1632,
+        "p-adj": 0.0,
+        "lower": -0.194,
+        "upper": -0.1325,
+        "reject": true
+      },
+      {
+        "group1": "Logistic (L2)",
+        "group2": "SLP (Single-Layer)",
+        "meandiff": 0.0007,
+        "p-adj": 1.0,
+        "lower": -0.03,
+        "upper": 0.0315,
+        "reject": false
+      },
+      {
+        "group1": "Logistic (PCA k=2)",
+        "group2": "Logistic (Unreg)",
+        "meandiff": 0.2339,
+        "p-adj": 0.0,
+        "lower": 0.2032,
+        "upper": 0.2647,
+        "reject": true
+      },
+      {
+        "group1": "Logistic (PCA k=2)",
+        "group2": "MLP (Multi-Layer)",
+        "meandiff": 0.2419,
+        "p-adj": 0.0,
+        "lower": 0.2112,
+        "upper": 0.2727,
+        "reject": true
+      },
+      {
+        "group1": "Logistic (PCA k=2)",
+        "group2": "MLP (PCA k=2)",
+        "meandiff": 0.0598,
+        "p-adj": 0.0,
+        "lower": 0.029,
+        "upper": 0.0905,
+        "reject": true
+      },
+      {
+        "group1": "Logistic (PCA k=2)",
+        "group2": "SLP (Single-Layer)",
+        "meandiff": 0.2237,
+        "p-adj": 0.0,
+        "lower": 0.193,
+        "upper": 0.2545,
+        "reject": true
+      },
+      {
+        "group1": "Logistic (Unreg)",
+        "group2": "MLP (Multi-Layer)",
+        "meandiff": 0.008,
+        "p-adj": 0.9712,
+        "lower": -0.0227,
+        "upper": 0.0388,
+        "reject": false
+      },
+      {
+        "group1": "Logistic (Unreg)",
+        "group2": "MLP (PCA k=2)",
+        "meandiff": -0.1742,
+        "p-adj": 0.0,
+        "lower": -0.2049,
+        "upper": -0.1434,
+        "reject": true
+      },
+      {
+        "group1": "Logistic (Unreg)",
+        "group2": "SLP (Single-Layer)",
+        "meandiff": -0.0102,
+        "p-adj": 0.9223,
+        "lower": -0.0409,
+        "upper": 0.0205,
+        "reject": false
+      },
+      {
+        "group1": "MLP (Multi-Layer)",
+        "group2": "MLP (PCA k=2)",
+        "meandiff": -0.1822,
+        "p-adj": 0.0,
+        "lower": -0.2129,
+        "upper": -0.1514,
+        "reject": true
+      },
+      {
+        "group1": "MLP (Multi-Layer)",
+        "group2": "SLP (Single-Layer)",
+        "meandiff": -0.0182,
+        "p-adj": 0.5052,
+        "lower": -0.049,
+        "upper": 0.0125,
+        "reject": false
+      },
+      {
+        "group1": "MLP (PCA k=2)",
+        "group2": "SLP (Single-Layer)",
+        "meandiff": 0.164,
+        "p-adj": 0.0,
+        "lower": 0.1332,
+        "upper": 0.1947,
+        "reject": true
+      }
+    ]
+  }
+}
